@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --background: #eef2f6;
+  --foreground: #1e293b;
+  --surface: #f4f7fa;
+  --surface-raised: #ffffff;
+  --muted: #64748b;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --neu-light: #ffffff;
+  --neu-dark: #c8d3e0;
+  --neu-shadow-raised:
+    8px 8px 20px rgba(163, 177, 198, 0.45),
+    -8px -8px 20px rgba(255, 255, 255, 0.95);
+  --neu-shadow-soft:
+    4px 4px 12px rgba(163, 177, 198, 0.35),
+    -4px -4px 12px rgba(255, 255, 255, 0.9);
+  --neu-shadow-inset:
+    inset 4px 4px 10px rgba(163, 177, 198, 0.35),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    --surface: #1e293b;
+    --surface-raised: #243044;
+    --muted: #94a3b8;
+    --accent: #2dd4bf;
+    --accent-hover: #5eead4;
+    --neu-light: #334155;
+    --neu-dark: #0c1220;
+    --neu-shadow-raised:
+      8px 8px 20px rgba(0, 0, 0, 0.45),
+      -8px -8px 20px rgba(51, 65, 85, 0.35);
+    --neu-shadow-soft:
+      4px 4px 12px rgba(0, 0, 0, 0.35),
+      -4px -4px 12px rgba(51, 65, 85, 0.25);
+    --neu-shadow-inset:
+      inset 4px 4px 10px rgba(0, 0, 0, 0.35),
+      inset -4px -4px 10px rgba(51, 65, 85, 0.2);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.neu-raised {
+  background: var(--surface-raised);
+  box-shadow: var(--neu-shadow-raised);
+}
+
+.neu-soft {
+  background: var(--surface-raised);
+  box-shadow: var(--neu-shadow-soft);
+}
+
+.neu-inset {
+  background: var(--surface);
+  box-shadow: var(--neu-shadow-inset);
+}
+
+.neu-pressable {
+  transition:
+    transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neu-pressable:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neu-pressable:active {
+    transform: none;
+  }
+}
