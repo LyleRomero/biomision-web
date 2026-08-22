@@ -6,6 +6,7 @@ import { Process } from "@/components/process";
 import { Services } from "@/components/services";
 import { Testimonial } from "@/components/testimonial";
 import { Trust } from "@/components/trust";
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </>
   );
 }
