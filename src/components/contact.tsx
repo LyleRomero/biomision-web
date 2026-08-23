@@ -44,15 +44,15 @@ export function Contact() {
             <dl className="mt-8 space-y-4 text-sm">
               <div>
                 <dt className="font-semibold text-foreground">Correo</dt>
-                <dd className="text-muted">contacto@biomision.com</dd>
+                <dd className="text-muted">servicio@biomision.com.co</dd>
               </div>
               <div>
                 <dt className="font-semibold text-foreground">Teléfono</dt>
-                <dd className="text-muted">+57 (601) 482-1930</dd>
+                <dd className="text-muted">+57 (317) 700-8390</dd>
               </div>
               <div>
                 <dt className="font-semibold text-foreground">Horario</dt>
-                <dd className="text-muted">Lunes a viernes, 7:00 - 18:00</dd>
+                <dd className="text-muted">24 Horas a tu disposicion</dd>
               </div>
             </dl>
           </Reveal>
@@ -116,7 +116,7 @@ export function Contact() {
                     className="resize-none rounded-xl border border-transparent bg-surface px-4 py-3 text-sm text-foreground outline-none ring-accent/30 transition-shadow focus:ring-2 neu-inset"
                   />
                   <p className="text-xs text-muted">
-                    Incluya tipo de equipos, cantidad aproximada y ciudad.
+                    En lo posible, incluya tipo de equipos, cantidad aproximada y ciudad.
                   </p>
                 </div>
 

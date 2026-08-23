@@ -6,6 +6,28 @@ html {
 
 :root {
   --background: #eef2f6;
+  --foreground: #001e41;
+  --surface: #f4f7fa;
+  --surface-raised: #ffffff;
+  --muted: #526579;
+  --accent: #fbbe10;
+  --accent-hover: #e3a900;
+  --neu-light: #ffffff;
+  --neu-dark: #c8d3e0;
+  --neu-shadow-raised:
+    8px 8px 20px rgba(163, 177, 198, 0.45),
+    -8px -8px 20px rgba(255, 255, 255, 0.95);
+  --neu-shadow-soft:
+    4px 4px 12px rgba(163, 177, 198, 0.35),
+    -4px -4px 12px rgba(255, 255, 255, 0.9);
+  --neu-shadow-inset:
+    inset 4px 4px 10px rgba(163, 177, 198, 0.35),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.85);
+}
+
+/*
+:root {
+  --background: #eef2f6;
   --foreground: #1e293b;
   --surface: #f4f7fa;
   --surface-raised: #ffffff;
@@ -24,6 +46,7 @@ html {
     inset 4px 4px 10px rgba(163, 177, 198, 0.35),
     inset -4px -4px 10px rgba(255, 255, 255, 0.85);
 }
+*/
 
 
 @theme inline {
