@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  color-scheme: light;
+}
+
 :root {
   --background: #eef2f6;
   --foreground: #1e293b;
@@ -21,28 +25,6 @@
     inset -4px -4px 10px rgba(255, 255, 255, 0.85);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #f1f5f9;
-    --surface: #1e293b;
-    --surface-raised: #243044;
-    --muted: #94a3b8;
-    --accent: #2dd4bf;
-    --accent-hover: #5eead4;
-    --neu-light: #334155;
-    --neu-dark: #0c1220;
-    --neu-shadow-raised:
-      8px 8px 20px rgba(0, 0, 0, 0.45),
-      -8px -8px 20px rgba(51, 65, 85, 0.35);
-    --neu-shadow-soft:
-      4px 4px 12px rgba(0, 0, 0, 0.35),
-      -4px -4px 12px rgba(51, 65, 85, 0.25);
-    --neu-shadow-inset:
-      inset 4px 4px 10px rgba(0, 0, 0, 0.35),
-      inset -4px -4px 10px rgba(51, 65, 85, 0.2);
-  }
-}
 
 @theme inline {
   --color-background: var(--background);

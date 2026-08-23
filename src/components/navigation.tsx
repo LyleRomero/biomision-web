@@ -19,10 +19,7 @@ export function Navigation() {
     <header className="fixed inset-x-0 top-0 z-40 px-4 pt-4">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between rounded-2xl px-5 neu-raised">
         <Link href="/" className="flex items-center gap-2.5">
-          <Logo className="h-8 w-8 text-accent" />
-          <span className="text-lg font-semibold tracking-tight text-foreground">
-            Biomision
-          </span>
+          <Logo className="h-8 w-auto sm:h-9" />
         </Link>
 
         <ul className="hidden items-center gap-8 lg:flex">

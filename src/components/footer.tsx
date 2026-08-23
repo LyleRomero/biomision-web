@@ -39,8 +39,7 @@ export function Footer() {
     <footer className="px-4 pb-8 pt-4">
       <div className="mx-auto flex max-w-7xl flex-col gap-6 rounded-3xl px-6 py-8 neu-raised md:flex-row md:items-center md:justify-between md:px-10">
         <div className="flex items-center gap-2.5">
-          <Logo className="h-7 w-7 text-accent" />
-          <span className="font-semibold text-foreground">Biomision</span>
+          <Logo className="h-7 w-auto sm:h-8" />
         </div>
 
         <nav aria-label="Enlaces del pie de página">
