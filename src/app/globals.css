@@ -97,3 +97,33 @@ body {
     transform: none;
   }
 }
+
+/*galeria*/
+.gallery-track {
+  animation: gallery-scroll-right 45s linear infinite;
+  will-change: transform;
+}
+
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+.gallery-track-static {
+  animation: none;
+}
+
+@keyframes gallery-scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-track {
+    animation: none;
+  }
+}

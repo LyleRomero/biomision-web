@@ -9,21 +9,21 @@ import { Reveal } from "./ui/reveal";
 const services = [
   {
     icon: FirstAidKit,
-    title: "Mantenimiento preventivo",
+    title: "Equipos de rehabilitación",
     description:
-      "Rutinas programadas para monitores, ventiladores, bombas de infusión y equipos de diagnóstico.",
+      "Mantenimiento y reparación de sillas de ruedas, camas hospitalarias, caminadores, camillas y otros equipos de apoyo.",
   },
   {
     icon: Wrench,
-    title: "Reparación correctiva",
+    title: "Oxigenoterapia",
     description:
-      "Diagnóstico en sitio, repuestos certificados y restablecimiento operativo con trazabilidad.",
+      "Servicio especializado para concentradores de oxígeno estacionarios y portátiles, reguladores, nebulizadores y otros equipos relacionados con terapia respiratoria.",
   },
   {
     icon: CalendarCheck,
-    title: "Calibración y validación",
+    title: "Apnea del sueño",
     description:
-      "Verificación metrológica alineada a protocolos clínicos y requisitos de acreditación.",
+      "Mantenimiento y revisión de equipos CPAP y dispositivos utilizados en terapia para la apnea del sueño.",
   },
 ];
 
